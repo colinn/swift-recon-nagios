@@ -19,7 +19,7 @@ import sys
 import os
 import subprocess
 
-process = subprocess.Popen(["swift-recon", "--objmd5"], stdout=subprocess.PIPE)
+process = subprocess.Popen(["swift-recon", "--md5"], stdout=subprocess.PIPE)
 
 statuscode = 0
 errors = []

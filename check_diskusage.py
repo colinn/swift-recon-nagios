@@ -34,7 +34,7 @@ process = subprocess.Popen(["swift-recon", "-d"], stdout=subprocess.PIPE)
 # Disk usage: lowest: 18.02%, highest: 29.2%, avg: 25.8431666667%
 
 for line in process.stdout.readlines():
-    if line.startswith("Disk usage:"):
+    if line.startswith("Disk usage: lowest"):
         usage_line_parts = line.split(" ")
 	i=0
         for part in usage_line_parts:
